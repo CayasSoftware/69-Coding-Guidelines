@@ -1,4 +1,4 @@
-# 69° C# Coding Style Guidelines
+# Cayas Software C# Coding Style Guidelines
 
 ## Namenskonventionen
 
@@ -110,7 +110,7 @@ Private Felder beginnen **grundsätzlich** mit einem Unterstrich, sodass diese l
 
     public class Foo
     {
-        private int bar;
+        int bar;
         
         public Foo(int bar)
         {
@@ -122,7 +122,7 @@ Private Felder beginnen **grundsätzlich** mit einem Unterstrich, sodass diese l
 
     public class Foo
     {
-        private int _bar;
+        int _bar;
         
         public Foo(int bar)
         {
@@ -235,7 +235,7 @@ Auf die Verwendung von this wird vollständig verzichtet. Durch die Verwendung d
 
 ### Verwendung des "private"-Modifizierers
 
-Obwohl auf ihn ebenso verzichtet werden könnte, da alles ohne Modifizierer per default `private` ist, verwenden wir ihn für alle privaten Elemente. Grund ist der schnellere Überblick über öffentliche und nicht-öffentliche Elemente beim Einlesen in neuen Code, wenn die nicht-öffentlichen auch direkt als solche explizit gekennzeichnet sind.
+Auf ihn wird ebenso verzichtet, da alles ohne Modifizierer per default `private` ist. Wir verwenden ihn für alle privaten Elemente, wenn es die Lesbarkeit erhöht. Grund ist der schnellere Überblick über öffentliche und nicht-öffentliche Elemente beim Einlesen in neuen Code, wenn nur die öffentlichen auch direkt als solche explizit gekennzeichnet sind.
 
 ### Leerzeilen
 
@@ -246,7 +246,7 @@ Nach öffnenden und vor schließenden Klammern werden keine Leerzeilen eingefüg
     public class Foo
     {
 
-        private int _bar;
+        int _bar;
         
         public Foo(int bar)
         {
@@ -261,7 +261,7 @@ Nach öffnenden und vor schließenden Klammern werden keine Leerzeilen eingefüg
 
     public class Foo
     {
-        private int _bar;
+        int _bar;
         
         public Foo(int bar)
         {
@@ -275,7 +275,7 @@ So würde z.B. Folgendes (bezogen auf die Formatierung) Sinn machen:
 
 	public class Foo
 	{
-		private int _bar;
+		int _bar;
 
 		public int Foo(int bar)
 		{
